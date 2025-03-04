@@ -224,7 +224,7 @@ hHelix <-
     
     
     ###################################################################
-    #-----SHOW SOME SPECIFIC TIME, LIKE MIDNIGHT (could also show full moon and new year)
+    #-----SHOW SOME SPECIFIC TIME, LIKE MIDNIGHT AND/OR NOON
     ###################################################################
     
     if (3 %in% order & !is.null(time.line)) {
