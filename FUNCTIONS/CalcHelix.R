@@ -1,9 +1,6 @@
-#----HIERARCHICAL HELIX CONSTRUCTION (VERSION 1)
+#----HIERARCHICAL HELIX CONSTRUCTION
 
 #---USEFUL PAGES:
-
-#---USEFUL PAGES:
-
 #https://math.stackexchange.com/questions/470538/helix-in-a-helix
 #https://mathematica.stackexchange.com/questions/18598/finding-unit-tangent-normal-and-binormal-vectors-for-a-given-rt
 #https://math.stackexchange.com/questions/974178/how-to-calculate-the-angle-between-2-vectors-in-3d-space-given-a-preset-function
