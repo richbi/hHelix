@@ -1,19 +1,4 @@
-#----HIERARCHICAL HELIX CONSTRUCTION
-
-#---USEFUL PAGES:
-
-#https://math.stackexchange.com/questions/470538/helix-in-a-helix
-#https://mathematica.stackexchange.com/questions/18598/finding-unit-tangent-normal-and-binormal-vectors-for-a-given-rt
-#https://math.stackexchange.com/questions/974178/how-to-calculate-the-angle-between-2-vectors-in-3d-space-given-a-preset-function
-#https://math.stackexchange.com/questions/461547/whats-the-equation-of-helix-surface/461637#461637
-#https://math.stackexchange.com/questions/470538/helix-in-a-helix
-#https://math.stackexchange.com/questions/3481477/centering-a-helix-along-an-arbitrary-vector-in-3d
-#https://math.stackexchange.com/questions/3451205/find-normal-vector-of-a-3d-vector
-#https://mathinsight.org/parametrized_curve_tangent_line_examples
-#https://www.mathsisfun.com/algebra/vectors-cross-product.html
-
-
-
+#----HIERARCHICAL HELIX CONSTRUCTION (BASIC STAND-ALONE)
 
 makeHelix <- function(t = NULL,
                       n.loops = c(2, 12, 30),
@@ -284,7 +269,16 @@ makeHelix <- function(t = NULL,
     ))
   }
   
-  
-  
-  
 }
+
+                                     #---POTENTIALLY USEFUL PAGES:
+
+#https://math.stackexchange.com/questions/470538/helix-in-a-helix
+#https://mathematica.stackexchange.com/questions/18598/finding-unit-tangent-normal-and-binormal-vectors-for-a-given-rt
+#https://math.stackexchange.com/questions/974178/how-to-calculate-the-angle-between-2-vectors-in-3d-space-given-a-preset-function
+#https://math.stackexchange.com/questions/461547/whats-the-equation-of-helix-surface/461637#461637
+#https://math.stackexchange.com/questions/470538/helix-in-a-helix
+#https://math.stackexchange.com/questions/3481477/centering-a-helix-along-an-arbitrary-vector-in-3d
+#https://math.stackexchange.com/questions/3451205/find-normal-vector-of-a-3d-vector
+#https://mathinsight.org/parametrized_curve_tangent_line_examples
+#https://www.mathsisfun.com/algebra/vectors-cross-product.html
