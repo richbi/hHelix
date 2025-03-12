@@ -1,6 +1,7 @@
+#------ WRAPPER FUNCTION
 
 hHelix <-
-  function(#order = 1:3,
+  function(
     pts.per.hour = 1,
     t.radius = sphere.radius * 1.25,
     t.alpha = 1,
@@ -10,14 +11,10 @@ hHelix <-
     radii,
     sphere.radius = radii[length(radii)] * 0.25,
     mark.start = TRUE,
-    
     skin.df = NULL,
     marker.df = NULL,
-    #cov.col = NULL,
     time.line = NULL,
     time.line.color = "white",
-    #"00:00:00"
-    show.lunar = TRUE,
     return = FALSE,
     ...) {
     dots <- list(...)
@@ -205,9 +202,6 @@ hHelix <-
       ))
       
       
-      
-      
-      
       rgl.spheres(
         x = helix.dat[, 1],
         y = helix.dat[, 2],
@@ -224,7 +218,7 @@ hHelix <-
     
     
     ###################################################################
-    #-----SHOW SOME SPECIFIC TIME, LIKE MIDNIGHT AND/OR NOON
+    #-----SHOW SOME SPECIFIC TIME, LIKE MIDNIGHT, NOON, ETC.
     ###################################################################
     
     if (3 %in% order & !is.null(time.line)) {
@@ -284,13 +278,12 @@ hHelix <-
     ###################################################################
     
     if (mark.start) {
-      print("Adding Start Marker to Plot")
+      print("Adding start marker to plot")
       
       helix.dat = do.call("CalcHelix", append(
         list(
           t =  HelixInput$t.structural$t.radians[1],
           radii = radii,
-          #+ c(rep(0, length(radii) - 1), radii[length(radii)] * 0.25 * 1),
           ratios = ratios
         ),
         match_from_dots(dots, CalcHelix, skip = c("t", "ratios", "radii"))
@@ -303,7 +296,6 @@ hHelix <-
         z = helix.dat[, 3],
         type = 'p',
         r = sphere.radius * 1.1,
-        #radii[length(radii)] * 0.25 / 2,
         col = "magenta",
         alpha = t.alpha
       )
