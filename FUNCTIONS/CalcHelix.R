@@ -1,4 +1,4 @@
-#----HIERARCHICAL HELIX CONSTRUCTION (USED IN WRAPPER hHelix)
+#----HIERARCHICAL HELIX CONSTRUCTION (USED IN WRAPPER FUNCTION hHelix() )
 
 CalcHelix <- function(t,
                       ratios,
